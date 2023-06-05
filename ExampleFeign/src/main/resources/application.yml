@@ -1,0 +1,20 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: EMP-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
